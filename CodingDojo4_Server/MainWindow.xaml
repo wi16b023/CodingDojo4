@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CodingDojo4_Server"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" DataContext="{Binding Main, Mode=OneWay, Source={StaticResource Locator}}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Content="Start" Margin="2" Width="50" Foreground="White" BorderBrush="LightSkyBlue" Background="LightSkyBlue"/>
+            <Button Content="Start" Margin="2" Width="50" Foreground="White" BorderBrush="LightSkyBlue" Background="LightSkyBlue" Command="{Binding StartBtnClicked}"/>
             <Button Content="Stop" Margin="2" Width="50" Foreground="White" BorderBrush="LightSkyBlue" Background="LightSkyBlue"/>
         </StackPanel>
         <TabControl Grid.Row="1">

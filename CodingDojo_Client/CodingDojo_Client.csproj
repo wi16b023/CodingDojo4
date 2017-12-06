@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{22FBDC2B-ECBE-4B34-974D-C8A6D12D6F7C}</ProjectGuid>
+    <ProjectGuid>{24F100AF-0860-4921-8168-EE9954B9953C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CodingDojo4_Server</RootNamespace>
-    <AssemblyName>CodingDojo4_Server</AssemblyName>
+    <RootNamespace>CodingDojo_Client</RootNamespace>
+    <AssemblyName>CodingDojo_Client</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -69,8 +69,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Communication\ClientHandling.cs" />
-    <Compile Include="Communication\Server.cs" />
+    <Compile Include="Communication\Client.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Page Include="MainWindow.xaml">
@@ -113,6 +112,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

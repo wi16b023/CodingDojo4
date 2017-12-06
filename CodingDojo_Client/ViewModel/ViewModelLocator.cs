@@ -1,7 +1,7 @@
 /*
   In App.xaml:
   <Application.Resources>
-      <vm:ViewModelLocator xmlns:vm="clr-namespace:CodingDojo4"
+      <vm:ViewModelLocator xmlns:vm="clr-namespace:CodingDojo_Client"
                            x:Key="Locator" />
   </Application.Resources>
   
@@ -12,12 +12,11 @@
   See http://www.galasoft.ch/mvvm
 */
 
-using CodingDojo4_Client.ViewModel;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 
-namespace CodingDojo4.ViewModel
+namespace CodingDojo_Client.ViewModel
 {
     /// <summary>
     /// This class contains static references to all the view models in the
