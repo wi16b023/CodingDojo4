@@ -113,6 +113,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CodingDojo4_DataHandling\CodingDojo4_DataHandling.csproj">
+      <Project>{67FC6D10-270B-441F-889E-B49445571BD3}</Project>
+      <Name>CodingDojo4_DataHandling</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
